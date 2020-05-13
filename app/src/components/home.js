@@ -1,7 +1,23 @@
 import React, {useEffect} from 'react'
+import Card from './card'
 import { connect } from 'react-redux';
 
 import {fetchCoins} from '../store/actions/index'
+
+import styled from 'styled-components'
+
+
+const Styled = styled.div`
+
+    display:flex;
+    flex-wrap:wrap;
+
+`;
+
+
+
+
+
 
 const Home = props => {
     console.log('look for me!!!!!!!!!', props.data)
@@ -17,9 +33,8 @@ const Home = props => {
                 <div>
                     <h3>{props.data.map(item => {
                         return (
-                            <div>
-                                <h1>{item.name}</h1>
-                                <img src={item.image}/>
+                            <div className="pleaseFlex">
+                                <Card item={item} key={item.id}/>
                             </div>
                         )
                     })}hello</h3>
