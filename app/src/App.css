@@ -19,11 +19,12 @@ flex-wrap:wrap;
 .card{
     text-align:center;
     margin:2%;  
+    margin-left: 10%;
     background-color: antiquewhite;
-    width:30%;
+    width:80%;
     border-radius:10px;    
 }
     img{
-   width:20%
+   width:10%
 }
 

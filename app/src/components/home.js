@@ -23,7 +23,7 @@ const Home = props => {
                                 <Card item={item} key={item.id}/>
                             </div>
                         )
-                    })}hello</h3>
+                    })}</h3>
                 </div>
             )}
         </div>
