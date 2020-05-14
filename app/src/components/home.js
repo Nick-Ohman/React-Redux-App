@@ -12,18 +12,18 @@ const Home = props => {
         props.fetchCoins();
     }, [])
     return (
-        <div>
+        <div className="cardforflex">
             
             {props.isFetching && <h3>wait a sec bruh, im fetching</h3>}
             {props.data && (
                 <div className="flex">
-                    <h3>{props.data.map(item => {
+                    {props.data.map(item => {
                         return (
-                            <div className="pleaseFlex">
+                            <>
                                 <Card item={item} key={item.id}/>
-                            </div>
+                            </>
                         )
-                    })}</h3>
+                    })}
                 </div>
             )}
         </div>
