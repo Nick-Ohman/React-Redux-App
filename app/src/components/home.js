@@ -2,22 +2,8 @@ import React, {useEffect} from 'react'
 import Card from './card'
 import { connect } from 'react-redux';
 
+
 import {fetchCoins} from '../store/actions/index'
-
-import styled from 'styled-components'
-
-
-const Styled = styled.div`
-
-    display:flex;
-    flex-wrap:wrap;
-
-`;
-
-
-
-
-
 
 const Home = props => {
     console.log('look for me!!!!!!!!!', props.data)
@@ -27,10 +13,10 @@ const Home = props => {
     }, [])
     return (
         <div>
-            <h1>The Pump and Dump Space</h1>
+            
             {props.isFetching && <h3>wait a sec bruh, im fetching</h3>}
             {props.data && (
-                <div>
+                <div className="flex">
                     <h3>{props.data.map(item => {
                         return (
                             <div className="pleaseFlex">

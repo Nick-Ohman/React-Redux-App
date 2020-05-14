@@ -4,24 +4,23 @@ body{
 
 .app {
   text-align: center;
-  display: flex;
-
 }
-
 
 h1{
   text-align: center;
 }
+
 .pleaseflex{
-display:flex;
+display: flex;
+flex-direction: row;
 flex-wrap:wrap;
 }
 
 .card{
     text-align:center;
     margin:2%;  
-   background-color: antiquewhite;
-  
+    background-color: antiquewhite;
+    width:30%;
     border-radius:10px;    
 }
     img{
