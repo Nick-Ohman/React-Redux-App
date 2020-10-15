@@ -1,5 +1,7 @@
 # React Redux State Management
 
+In this project I built a React app with a Redux state management system. This was a great learning tool to build a foundation for redux.
+
 
 
 # Module Project: Async Redux - React Redux App
